@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="initial-scale=1">
+<title>Cafe Capriceへようこそ</title>
+<link rel="stylesheet" href="CSS/reset.css">
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/slick.css">
+<link rel="stylesheet" href="CSS/slick-theme.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <nav>
+                    <ul>
+                        <li><a href="#">TOP</a></li>
+                        <li><a href="#">CONSEPT</a></li>
+                        <li><a href="#">ACCESS</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<main>
+    <!--メイン画像-->
+    <div class="top-wrapper">
+        <!--ここにスライダ-->
+        <div class="top-slide">
+            <img src="image/sride/1.png" alt="">
+            <img src="image/sride/2.png" alt="">
+            <img src="image/sride/3.png" alt="">
+            <img src="image/sride/4.png" alt="">
+            <img src="image/sride/5.png" alt="">
+        </div>
+        <img src="image/logo-shadow.png" alt="Cafe Cparice" class="top-logo">
+    </div>
+    <!--メイン画像ここまで-->
+    <!--ここからコンセプト-->
+    <div class="consept-wrapper">
+        <div class="consept-text">
+            <h2>自由できままな、<br>至高の時間とスイーツをあなたへ。</h2>
+            <p>その季節、その時の気分でメニューをきめる<br>店主のきまぐれカフェ、カプリス<br></p>
+            <p>ゆったりとした心あたたまる至高の時間とスイーツを提供します。</p>
+            <p>今日のきままスイーツをお楽しみに。</p>
+        </div>
+        <div class="consept-images">
+            <img src="image/consept.png" alt="">
+        </div>
+    </div>
+    <!--コンセプトここまで-->
+    <!--Newsここから-->
+    <h1>News</h1>
+        <div class="news-image">
+            <a href="#"><img src="image/news1.png" alt=""></a>
+            <a href="#"><img src="image/news2.png" alt=""></a>
+            <a href="#"><img src="image/news3.png" alt=""></a>
+        </div>
+    <!--Newsここまで-->
+    <!--アクセスここから-->
+    <h1>Access</h1>
+    <div class="Access-wrapper">
+        <div class="access-text">
+            <p>Cafe Caprice</p>
+            <p>〒163-8001<br>東京都新宿区西新宿2-8-1</p>
+            <p>TEL 03・35321・1111</p>
+            <p>Open 14:00～20:00</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5146415727822!2d139.68972771525904!3d35.68895123019258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd4b71a37a1%3A0xf1665c37f38661e8!2z5p2x5Lqs6YO95bqB!5e0!3m2!1sja!2sjp!4v1598752162769!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!--アクセスここまで-->
+</main>
+<footer>
+    <nav>
+        <ul>
+            <img src="image/logo-footer.png" alt="ロゴ">
+            <li><a href="#">TOP</a></li>
+            <li><a href="#">CONSEPT</a></li>
+            <li><a href="#">ACCESS</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="JS/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.top-slide').slick({
+            accessibility: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1000,
+            pauseOnHover: false,
+            pauseOnDotsHover: true,
+            dots: true,
+            draggable: false,
+            fade: true,
+            arrows: false,
+            infinite: true,
+            swipe: true,
+        });
+    });
+</script>
+
+</body>
+</html>
